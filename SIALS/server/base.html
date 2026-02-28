@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIALS SOC Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="refresh" content="5"> <!-- Auto refresh every 5 sec -->
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="/">Dashboard</a> |
+    <a href="/logs">Logs</a> |
+    <a href="/tampered">Tampered</a> |
+    <a href="/alerts">Alerts</a> |
+    <a href="/settings">Settings</a> |
+    <a href="/export_logs">Export CSV</a> |
+    <a href="/logout">Logout</a>
+</nav>
+<hr>
+
+<!-- Red Alert Popup -->
+{% if tampered_logs > 0 %}
+<div id="alertBox">🚨 CRITICAL ALERT: LOG TAMPERING DETECTED</div>
+{% endif %}
+
+<!-- Stats Bar -->
+{% if total_logs is defined %}
+<div class="stats">
+    <div class="card">📦 Total Logs: {{ total_logs }}</div>
+    <div class="card">✅ Verified Logs: {{ verified_logs }}</div>
+    <div class="card">🚨 Tampered Logs: {{ tampered_logs }}</div>
+</div>
+<hr>
+{% endif %}
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
+

@@ -1,0 +1,4 @@
+cryptography==41.0.2
+flask==2.3.6
+pytest==7.4.2
+pysqlite3==0.4.8
