@@ -1,48 +1,51 @@
-Secure Incident Audit Logging System (SIALS)
+# Secure Incident Audit Logging System (SIALS)
 
 Secure Incident Audit Logging System (SIALS) is a Python-based tool designed to provide secure, tamper-proof logging of system and user events. It uses SHA-256 hashing, ECDSA digital signatures, and AES encryption to ensure confidentiality, integrity, authentication, and tamper-proof audit logs.
 
-Description
+---
 
-SIALS captures system and user events, securing them with SHA-256 hashing, ECDSA digital signatures, and AES encryption. Logs are chained to prevent tampering, verified for integrity, and stored securely, providing reliable, tamper-proof audit logging for educational purposes.
+## Description
 
-Features
+SIALS captures system and user events, securing them with SHA-256 hashing, ECDSA digital signatures, and AES encryption. Logs are chained to prevent tampering, verified for integrity, and stored securely, providing reliable, tamper-proof audit logging for **educational purposes**.
 
-Digital Signatures (ECDSA) for tamper-proof logs
+---
 
-Hash Chaining using SHA-256 for integrity
+## Features
 
-AES Encryption for secure log storage
+- Digital Signatures (ECDSA) for tamper-proof logs  
+- Hash Chaining using SHA-256 for integrity  
+- AES Encryption for secure log storage  
+- Secure key management with password-protected keystore  
+- Log verification and tamper detection  
+- Optional reporting in CSV/JSON format  
+- CLI interface for capturing and verifying logs  
 
-Secure key management with password-protected keystore
+---
 
-Log verification and tamper detection
+## Technologies Used
 
-Optional reporting in CSV/JSON format
+- Python 3.x  
+- Flask (optional web interface)  
+- SQLite (database for storing logs)  
+- `cryptography` library for encryption and digital signatures  
+- `hashlib` for hashing logs  
+- `pytest` for unit testing  
 
-CLI interface for capturing and verifying logs
+---
 
-Technologies Used
+## Installation
 
-Python 3.x
-
-Flask (optional web interface)
-
-SQLite (database for storing logs)
-
-cryptography library for encryption and digital signatures
-
-hashlib for hashing logs
-
-pytest for unit testing
-
-Installation
-1. Clone the Repository
+1. Clone the repository:  
+```bash
 git clone https://github.com/your-username/sials.git
 cd sials
-2. Install Required Packages
+
+Install required packages:
+
 pip install -r requirements.txt
-3. Run the Tool
+
+Run the tool:
+
 python sials.py
 Usage
 
@@ -66,7 +69,7 @@ Demonstrate audit logging processes and verification techniques
 
 Testing
 
-Unit tests implemented using pytest.
+Unit tests implemented using pytest
 
 Test cases include:
 
