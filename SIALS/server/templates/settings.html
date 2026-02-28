@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SIALS Settings</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>SIALS</h2>
+    <a href="/">Dashboard</a>
+    <a href="/logs">Logs</a>
+    <a href="/alerts">Alerts</a>
+    <a href="/settings" class="active">Settings</a>
+</div>
+
+<div class="main">
+
+<div class="topbar">
+    <h1>System Settings</h1>
+
+    <div class="user-box">
+        <span class="user">👤 {{ user }}</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</div>
+
+<div class="table-box">
+
+<h3 style="color:#2ad3ff;margin-bottom:12px;">Security Configuration</h3>
+
+<p style="color:#cfe9ff;line-height:1.6;">
+✔ Hash Algorithm: SHA-256 <br>
+✔ Database: SQLite Secure Storage <br>
+✔ Log Chain Validation: Enabled <br>
+✔ Tamper Detection: Active <br>
+✔ Session Protection: Enabled <br>
+✔ Timestamp Integrity: Active
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
+

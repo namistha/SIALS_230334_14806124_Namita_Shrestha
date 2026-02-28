@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>SIALS SOC Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+    <h2>SIALS</h2>
+    <a href="/" class="active">Dashboard</a>
+    <a href="/logs">Logs</a>
+    <a href="/alerts">Alerts</a>
+    <a href="/settings">Settings</a>
+</div>
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="topbar">
+    <h1>SOC Monitoring Panel</h1>
+
+    <div class="user-box">
+        <span class="user">👤 {{ user }}</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</div>
+
+<!-- ================= STATS CARDS ================= -->
+
+<div class="cards">
+
+    <div class="card">
+        <h4>Total Logs</h4>
+        <p>{{ total_logs }}</p>
+    </div>
+
+    <div class="card">
+        <h4>Verified Logs</h4>
+        <p>{{ verified_logs }}</p>
+    </div>
+
+    <div class="card">
+        <h4>Tampered Logs</h4>
+        <p style="color:#ff4d4d;">{{ tampered_logs }}</p>
+    </div>
+
+</div>
+
+<!-- ================= ALERT BAR ================= -->
+
+{% if tampered_logs > 0 %}
+<div class="alert-box">
+⚠ LOG INTEGRITY ALERT — {{ tampered_logs }} Tampered Entry Detected
+</div>
+{% endif %}
+
+<!-- ================= GRAPH PANEL ================= -->
+
+<div class="chart-box">
+
+<h3 style="color:#00b4ff;margin-bottom:15px;">
+Daily Logs Analysis (Last Activity Trend)
+</h3>
+
+<div style="width:100%; height:260px;">
+    <canvas id="logChart"></canvas>
+</div>
+
+</div>
+
+<!-- ================= GRAPH SCRIPT ================= -->
+
+<script>
+
+const labels = {{ graph_labels | default([]) | tojson }};
+const counts = {{ graph_counts | default([]) | tojson }};
+
+const ctx = document.getElementById("logChart").getContext("2d");
+
+new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: labels,
+        datasets: [{
+            label: "Daily Logs",
+            data: counts,
+            fill: true,
+            tension: 0.4,
+            borderWidth: 2,
+            pointRadius: 3,
+            borderColor: "#00b4ff",
+            backgroundColor: "rgba(0,180,255,0.15)",
+            pointBackgroundColor: "#00b4ff"
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                labels: {
+                    color: "#9ca3af"
+                }
+            }
+        },
+        scales: {
+            x: {
+                ticks: { color: "#9ca3af" },
+                grid: { display: false }
+            },
+            y: {
+                beginAtZero: true,
+                ticks: { color: "#9ca3af" },
+                grid: { color: "rgba(255,255,255,0.05)" }
+            }
+        }
+    }
+});
+
+</script>
+
+<!-- ================= RECENT LOGS TABLE ================= -->
+
+<div class="table-box">
+
+<h3 style="color:#00b4ff;margin-bottom:15px;">
+Recent System Logs — Blockchain Verified Records
+</h3>
+
+<table>
+
+<tr>
+<th>Timestamp</th>
+<th>Log Message</th>
+<th>SHA-256 Hash</th>
+<th>Status</th>
+</tr>
+
+{% for log in logs %}
+<tr class="{% if log[3] == 1 %}tampered-row{% endif %}">
+
+<td>{{ log[0] }}</td>
+
+<td style="max-width:420px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+{{ log[1] }}
+</td>
+
+<td>{{ log[2][:20] }}...</td>
+
+<td>
+{% if log[3] == 1 %}
+<span style="color:#ff4d4d;font-weight:bold;">Tampered</span>
+{% else %}
+<span style="color:#00b4ff;font-weight:bold;">Verified</span>
+{% endif %}
+</td>
+
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+

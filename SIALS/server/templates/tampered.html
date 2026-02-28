@@ -1,0 +1,28 @@
+{% extends "dashboard.html" %}
+
+{% block content %}
+
+<h2>⚠️ Tampered Logs</h2>
+
+<div class="table-box">
+
+<table>
+
+<tr>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+
+{% for row in tampered %}
+<tr style="color:#f87171">
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+{% endblock %}
+

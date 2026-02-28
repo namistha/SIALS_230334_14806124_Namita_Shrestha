@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SIALS Logs</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function filterLogs() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let rows = document.querySelectorAll("tbody tr");
+
+    rows.forEach(row => {
+        let text = row.innerText.toLowerCase();
+        row.style.display = text.includes(input) ? "" : "none";
+    });
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>SIALS</h2>
+    <a href="/">Dashboard</a>
+    <a href="/logs" class="active">Logs</a>
+    <a href="/alerts">Alerts</a>
+    <a href="/settings">Settings</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h1>Audit Log Repository</h1>
+
+    <div class="user-box">
+        <span>👤 {{ user }}</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</div>
+
+<!-- LOG CONTROLS -->
+<div class="table-box">
+
+<a href="/export_logs_download" class="export-btn">⬇ Export Evidence CSV</a>
+
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+
+<h3 style="color:#2ad3ff;">System Event Logs</h3>
+
+<input id="searchInput"
+       onkeyup="filterLogs()"
+       placeholder="Search logs..."
+       style="background:#020d1f;border:1px solid #2ad3ff;color:white;padding:7px 12px;border-radius:6px;">
+
+</div>
+
+<table>
+
+<tr>
+<th>Timestamp</th>
+<th>Log Data</th>
+<th>Hash</th>
+<th>Status</th>
+</tr>
+
+{% for log in logs %}
+<tr>
+
+<td>{{ log.timestamp }}</td>
+
+<td>
+{{ log.log_data }}
+{% if log.is_encrypted %}
+<span style="color:cyan;"> 🔒</span>
+{% endif %}
+</td>
+
+<td style="font-family:monospace">
+{{ log.hash[:32] }}...
+</td>
+
+<td>
+{% if log.is_tampered %}
+<span style="color:red;font-weight:bold;">TAMPERED</span>
+{% else %}
+<span style="color:#2ad3ff;font-weight:bold;">VERIFIED</span>
+{% endif %}
+</td>
+
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+

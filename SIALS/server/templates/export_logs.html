@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Export Logs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Export Logs</h1>
+
+    <p>Total Logs: {{ total_logs }}</p>
+    <p>Verified Logs: {{ verified_logs }}</p>
+    <p>Tampered Logs: {{ tampered_logs }}</p>
+
+    <a href="{{ url_for('export_logs_download') }}">
+        <button>Download CSV</button>
+    </a>
+
+    <p><a href="/">Back to Dashboard</a></p>
+</body>
+</html>

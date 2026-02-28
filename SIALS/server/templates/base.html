@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SIALS SOC</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+<h2>SIALS</h2>
+<a href="/">Dashboard</a>
+<a href="/logs">Logs</a>
+<a href="/alerts">Alerts</a>
+<a href="/settings">Settings</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<!-- TOP BAR -->
+<div class="topbar">
+<h1>SOC Monitoring Panel</h1>
+
+<div class="userbox">
+<span>👤 admin</span>
+<a class="logout" href="/logout">Logout</a>
+</div>
+</div>
+
+<!-- STATS -->
+{% if total_logs is defined %}
+<div class="stats">
+
+<div class="stat-card">
+<p>Total Logs</p>
+<h2>{{ total_logs }}</h2>
+</div>
+
+<div class="stat-card">
+<p>Verified Logs</p>
+<h2>{{ verified_logs }}</h2>
+</div>
+
+<div class="stat-card red">
+<p>Tampered Logs</p>
+<h2>{{ tampered_logs }}</h2>
+</div>
+
+</div>
+{% endif %}
+
+{% block content %}{% endblock %}
+
+</div>
+</div>
+
+</body>
+</html>
+

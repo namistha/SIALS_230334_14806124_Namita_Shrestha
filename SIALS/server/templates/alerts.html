@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SIALS Alerts</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>SIALS</h2>
+    <a href="/">Dashboard</a>
+    <a href="/logs">Logs</a>
+    <a href="/alerts" class="active">Alerts</a>
+    <a href="/settings">Settings</a>
+</div>
+
+<div class="main">
+
+<div class="topbar">
+    <h1>Security Alerts</h1>
+
+    <div class="user-box">
+        <span class="user">👤 {{ user }}</span>
+        <a class="logout" href="/logout">Logout</a>
+    </div>
+</div>
+
+<div class="table-box">
+
+<h3 style="color:#ff4d4d;margin-bottom:12px;">Tamper Detection Alerts</h3>
+
+{% if tampered_logs > 0 %}
+
+<div class="alert-box">
+🚨 CRITICAL — {{ tampered_logs }} Log Integrity Violations Detected
+</div>
+
+{% else %}
+
+<div class="alert-box" style="background:#0f5132;color:#4cffb2;">
+✅ No Security Alerts — System Integrity Normal
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+</body>
+</html>
+
