@@ -1,0 +1,188 @@
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Queued start job for default target default.target.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Created slice app.slice - User Application Slice.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Created slice session.slice - User Core Session Slice.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Reached target paths.target - Paths.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Reached target timers.target - Timers.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on dirmngr.socket - GnuPG network certificate management daemon.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on gnome-keyring-daemon.socket - GNOME Keyring daemon.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on gpg-agent-browser.socket - GnuPG cryptographic agent and passphrase cache (access for web browsers).
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on gpg-agent-extra.socket - GnuPG cryptographic agent and passphrase cache (restricted).
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Starting gpg-agent.socket - GnuPG cryptographic agent and passphrase cache...
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on keyboxd.socket - GnuPG public key management service.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on pipewire-pulse.socket - PipeWire PulseAudio.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on pipewire.socket - PipeWire Multimedia System Sockets.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on pk-debconf-helper.socket - debconf communication socket.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on speech-dispatcher.socket - Speech Dispatcher Socket.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Starting ssh-agent.socket - OpenSSH Agent socket...
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on dbus.socket - D-Bus User Message Bus Socket.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on gpg-agent.socket - GnuPG cryptographic agent and passphrase cache.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Listening on ssh-agent.socket - OpenSSH Agent socket.
+2026-02-21T01:23:53-05:00 kali systemd[3583]: Starting gcr-ssh-agent.socket - GCR ssh-agent wrapper...
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Listening on gcr-ssh-agent.socket - GCR ssh-agent wrapper.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Listening on gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation).
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Reached target sockets.target - Sockets.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Reached target basic.target - Basic System.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Starting bindiff-plugins.service - Installs BinDiff plugin symlinks once on session start if necessary....
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Starting dbus.service - D-Bus User Message Bus...
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Starting mosquitto.service - Mosquitto MQTT Broker for namita...
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started pipewire.service - PipeWire Multimedia Service.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Finished bindiff-plugins.service - Installs BinDiff plugin symlinks once on session start if necessary..
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started gnome-keyring-daemon.service - GNOME Keyring daemon.
+2026-02-21T01:23:54-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] AppArmor D-Bus mediation is enabled
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started dbus.service - D-Bus User Message Bus.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started mpris-proxy.service - Bluetooth mpris proxy.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-02-21T01:23:54-05:00 kali gnome-keyring-daemon[3856]: GNOME_KEYRING_CONTROL=/run/user/1001/keyring
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Started mosquitto.service - Mosquitto MQTT Broker for namita.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Reached target default.target - Main User Target.
+2026-02-21T01:23:54-05:00 kali systemd[3583]: Startup finished in 825ms.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'Center' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.alsa: The decibel volume range for element 'LFE' (-4650 dB - -2400 dB) has negative maximum. Disabling the decibel range.
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: default: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: spa.bluez5: BlueZ system service is not available
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: wp-device: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+2026-02-21T01:23:54-05:00 kali wireplumber[3868]: s-monitors-libcamera: PipeWire's libcamera SPA plugin is missing or broken. Some camera types may not be supported.
+2026-02-21T01:23:56-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.a11y.Bus' unit='at-spi-dbus-bus.service' requested by ':1.17' (uid=1001 pid=3920 comm="xfce4-session" label="unconfined")
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Starting at-spi-dbus-bus.service - Accessibility services bus...
+2026-02-21T01:23:56-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.a11y.Bus'
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Started at-spi-dbus-bus.service - Accessibility services bus.
+2026-02-21T01:23:56-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.xfce.Xfconf' unit='xfconfd.service' requested by ':1.19' (uid=1001 pid=3920 comm="xfce4-session" label="unconfined")
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Starting xfconfd.service - Xfce configuration service...
+2026-02-21T01:23:56-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.xfce.Xfconf'
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Started xfconfd.service - Xfce configuration service.
+2026-02-21T01:23:56-05:00 kali at-spi-bus-launcher[4543]: dbus-daemon[4543]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1001 pid=3920 comm="xfce4-session" label="unconfined")
+2026-02-21T01:23:56-05:00 kali at-spi-bus-launcher[4543]: dbus-daemon[4543]: Successfully activated service 'org.a11y.atspi.Registry'
+2026-02-21T01:23:56-05:00 kali at-spi-bus-launcher[4584]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Started gpg-agent.service - GnuPG cryptographic agent and passphrase cache.
+2026-02-21T01:23:56-05:00 kali gpg-agent[4637]: gpg-agent (GnuPG) 2.4.8 starting in supervised mode.
+2026-02-21T01:23:56-05:00 kali gpg-agent[4637]: using fd 3 for extra socket (/run/user/1001/gnupg/S.gpg-agent.extra)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4637]: using fd 4 for browser socket (/run/user/1001/gnupg/S.gpg-agent.browser)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4637]: using fd 5 for ssh socket (/run/user/1001/gnupg/S.gpg-agent.ssh)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4637]: using fd 6 for std socket (/run/user/1001/gnupg/S.gpg-agent)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4637]: listening on: std=6 extra=3 browser=4 ssh=5
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Started gpg-agent.service - GnuPG cryptographic agent and passphrase cache.
+2026-02-21T01:23:56-05:00 kali gpg-agent[4660]: gpg-agent (GnuPG) 2.4.8 starting in supervised mode.
+2026-02-21T01:23:56-05:00 kali gpg-agent[4660]: using fd 3 for extra socket (/run/user/1001/gnupg/S.gpg-agent.extra)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4660]: using fd 4 for browser socket (/run/user/1001/gnupg/S.gpg-agent.browser)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4660]: using fd 5 for ssh socket (/run/user/1001/gnupg/S.gpg-agent.ssh)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4660]: using fd 6 for std socket (/run/user/1001/gnupg/S.gpg-agent)
+2026-02-21T01:23:56-05:00 kali gpg-agent[4660]: listening on: std=6 extra=3 browser=4 ssh=5
+2026-02-21T01:23:56-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Daemon' unit='gvfs-daemon.service' requested by ':1.23' (uid=1001 pid=4706 comm="xfwm4" label="unconfined")
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Starting gvfs-daemon.service - Virtual filesystem service...
+2026-02-21T01:23:56-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.Daemon'
+2026-02-21T01:23:56-05:00 kali systemd[3583]: Started gvfs-daemon.service - Virtual filesystem service.
+2026-02-21T01:23:58-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='ca.desrt.dconf' unit='dconf.service' requested by ':1.26' (uid=1001 pid=4960 comm="xfsettingsd" label="unconfined")
+2026-02-21T01:23:58-05:00 kali systemd[3583]: Starting dconf.service - User preferences database...
+2026-02-21T01:23:58-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'ca.desrt.dconf'
+2026-02-21T01:23:58-05:00 kali systemd[3583]: Started dconf.service - User preferences database.
+2026-02-21T01:24:00-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.freedesktop.Notifications' unit='xfce4-notifyd.service' requested by ':1.38' (uid=1001 pid=5346 comm="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0" label="unconfined")
+2026-02-21T01:24:00-05:00 kali systemd[3583]: Starting xfce4-notifyd.service - XFCE notifications service...
+2026-02-21T01:24:00-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.xfce.Notifyd' unit='xfce4-notifyd.service' requested by ':1.35' (uid=1001 pid=5359 comm="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0" label="unconfined")
+2026-02-21T01:24:01-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.freedesktop.thumbnails.Thumbnailer1' unit='tumblerd.service' requested by ':1.31' (uid=1001 pid=5266 comm="xfdesktop" label="unconfined")
+2026-02-21T01:24:01-05:00 kali systemd[3583]: Starting tumblerd.service - Thumbnailing service...
+2026-02-21T01:24:02-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.freedesktop.Notifications'
+2026-02-21T01:24:02-05:00 kali systemd[3583]: Started xfce4-notifyd.service - XFCE notifications service.
+2026-02-21T01:24:02-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.xfce.Notifyd'
+2026-02-21T01:24:03-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.UDisks2VolumeMonitor' unit='gvfs-udisks2-volume-monitor.service' requested by ':1.43' (uid=1001 pid=5850 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+2026-02-21T01:24:03-05:00 kali systemd[3583]: Starting gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Desktop' unit='xdg-desktop-portal.service' requested by ':1.55' (uid=1001 pid=6267 comm="/usr/bin/qterminal" label="unconfined")
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting xdg-desktop-portal.service - Portal service...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.bluez.obex' unit='obex.service' requested by ':1.51' (uid=1001 pid=5872 comm="/usr/bin/python3 /usr/bin/blueman-applet" label="unconfined")
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting obex.service - Bluetooth OBEX service...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.PermissionStore' unit='xdg-permission-store.service' requested by ':1.56' (uid=1001 pid=6340 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting xdg-permission-store.service - sandboxed app permission store...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Started xdg-permission-store.service - sandboxed app permission store.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.freedesktop.portal.Documents' unit='xdg-document-portal.service' requested by ':1.56' (uid=1001 pid=6340 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+2026-02-21T01:24:04-05:00 kali obexd[6367]: OBEX daemon 5.84
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting xdg-document-portal.service - flatpak document portal service...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.bluez.obex'
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Started obex.service - Bluetooth OBEX service.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.59' (uid=1001 pid=6367 comm="/usr/libexec/bluetooth/obexd" label="unconfined")
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activation via systemd failed for unit 'evolution-source-registry.service': Unit evolution-source-registry.service not found.
+2026-02-21T01:24:04-05:00 kali obexd[6367]: Unable to acquire registry: Error calling StartServiceByName for org.gnome.evolution.dataserver.Sources5: Unit evolution-source-registry.service not found.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gnome.evolution.dataserver.Sources5' unit='evolution-source-registry.service' requested by ':1.59' (uid=1001 pid=6367 comm="/usr/libexec/bluetooth/obexd" label="unconfined")
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activation via systemd failed for unit 'evolution-source-registry.service': Unit evolution-source-registry.service not found.
+2026-02-21T01:24:04-05:00 kali obexd[6367]: Unable to acquire registry: Error calling StartServiceByName for org.gnome.evolution.dataserver.Sources5: Unit evolution-source-registry.service not found.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.freedesktop.portal.Documents'
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Started xdg-document-portal.service - flatpak document portal service.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.freedesktop.impl.portal.desktop.gtk' unit='xdg-desktop-portal-gtk.service' requested by ':1.56' (uid=1001 pid=6340 comm="/usr/libexec/xdg-desktop-portal" label="unconfined")
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.UDisks2VolumeMonitor'
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.GPhoto2VolumeMonitor' unit='gvfs-gphoto2-volume-monitor.service' requested by ':1.43' (uid=1001 pid=5850 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor...
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.GPhoto2VolumeMonitor'
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.
+2026-02-21T01:24:04-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.GoaVolumeMonitor' unit='gvfs-goa-volume-monitor.service' requested by ':1.43' (uid=1001 pid=5850 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+2026-02-21T01:24:04-05:00 kali systemd[3583]: Starting gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor...
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.GoaVolumeMonitor'
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.AfcVolumeMonitor' unit='gvfs-afc-volume-monitor.service' requested by ':1.43' (uid=1001 pid=5850 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Starting gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor...
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.AfcVolumeMonitor'
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.MTPVolumeMonitor' unit='gvfs-mtp-volume-monitor.service' requested by ':1.43' (uid=1001 pid=5850 comm="/usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd" label="unconfined")
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Starting gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.MTPVolumeMonitor'
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.freedesktop.impl.portal.desktop.gtk'
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.freedesktop.thumbnails.Thumbnailer1'
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started tumblerd.service - Thumbnailing service.
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Starting gvfs-metadata.service - Virtual filesystem metadata service...
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Activating via systemd: service name='org.gtk.vfs.Metadata' unit='gvfs-metadata.service' requested by ':1.31' (uid=1001 pid=5266 comm="xfdesktop" label="unconfined")
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.gtk.vfs.Metadata'
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started gvfs-metadata.service - Virtual filesystem metadata service.
+2026-02-21T01:24:05-05:00 kali dbus-daemon[3822]: [session uid=1001 pid=3822 pidfd=5] Successfully activated service 'org.freedesktop.portal.Desktop'
+2026-02-21T01:24:05-05:00 kali systemd[3583]: Started xdg-desktop-portal.service - Portal service.
+2026-02-21T01:29:05-05:00 kali systemd[3583]: tumblerd.service: Consumed 1.458s CPU time over 5min 4.566s wall clock time, 135.4M memory peak.
+2026-02-21T01:30:19-05:00 kali sudo[24325]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/python3 main.py
+2026-02-21T01:30:19-05:00 kali sudo[24325]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T01:30:19-05:00 kali sudo[24325]: pam_unix(sudo:session): session closed for user root
+2026-02-21T01:32:44-05:00 kali sudo[28268]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim run_sials.sh
+2026-02-21T01:32:44-05:00 kali sudo[28268]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T01:32:50-05:00 kali sudo[28268]: pam_unix(sudo:session): session closed for user root
+2026-02-21T01:33:13-05:00 kali sudo[29266]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/chown namita:namita /home/namita/SIALS/run_sials.sh
+2026-02-21T01:33:13-05:00 kali sudo[29266]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T01:33:13-05:00 kali sudo[29266]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:02:13-05:00 kali sudo[77551]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim main.py
+2026-02-21T02:02:13-05:00 kali sudo[77551]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:02:47-05:00 kali sudo[77551]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:06:11-05:00 kali sudo[84327]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim main.py
+2026-02-21T02:06:11-05:00 kali sudo[84327]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:06:44-05:00 kali sudo[84327]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:06:59-05:00 kali sudo[85676]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim main.py
+2026-02-21T02:06:59-05:00 kali sudo[85676]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:07:36-05:00 kali sudo[85676]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:07:50-05:00 kali sudo[87094]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim main.py
+2026-02-21T02:07:50-05:00 kali sudo[87094]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:10:50-05:00 kali sudo[87094]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:16:19-05:00 kali sudo[101203]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim crypto/aes_encrypt.py
+2026-02-21T02:16:19-05:00 kali sudo[101203]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:16:51-05:00 kali sudo[101203]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:17:12-05:00 kali sudo[102787]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim main.py
+2026-02-21T02:17:12-05:00 kali sudo[102787]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:17:24-05:00 kali sudo[102787]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:21:40-05:00 kali sudo[110068]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/python3 main.py
+2026-02-21T02:21:40-05:00 kali sudo[110068]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:21:40-05:00 kali sudo[110068]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:24:01-05:00 kali sudo[113673]:   namita : TTY=pts/1 ; PWD=/var/log ; USER=root ; COMMAND=/usr/sbin/usermod -aG systemd-journal namita
+2026-02-21T02:24:01-05:00 kali sudo[113673]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:24:02-05:00 kali sudo[113673]: pam_unix(sudo:session): session closed for user root
+2026-02-21T02:29:36-05:00 kali sudo[122973]:   namita : TTY=pts/0 ; PWD=/home/namita/SIALS ; USER=root ; COMMAND=/usr/bin/vim collect_today_logs.py
+2026-02-21T02:29:36-05:00 kali sudo[122973]: pam_unix(sudo:session): session opened for user root(uid=0) by namita(uid=1001)
+2026-02-21T02:29:46-05:00 kali sudo[122973]: pam_unix(sudo:session): session closed for user root
