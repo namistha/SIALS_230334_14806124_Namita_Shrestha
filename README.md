@@ -1,42 +1,90 @@
-# Secure Incident Audit Logging System (SIALS)
+Secure Incident Audit Logging System (SIALS)
 
-Secure Incident Audit Logging System (SIALS) is a Python-based tool designed to provide secure, tamper-proof logging of system and user events. It uses SHA-256 hashing, ECDSA digital signatures, and AES encryption to ensure **confidentiality, integrity, authentication, and tamper-proof audit logs**.
+Secure Incident Audit Logging System (SIALS) is a Python-based tool designed to provide secure, tamper-proof logging of system and user events. It uses SHA-256 hashing, ECDSA digital signatures, and AES encryption to ensure confidentiality, integrity, authentication, and tamper-proof audit logs.
 
----
+Description
 
-## Description
+SIALS captures system and user events, securing them with SHA-256 hashing, ECDSA digital signatures, and AES encryption. Logs are chained to prevent tampering, verified for integrity, and stored securely, providing reliable, tamper-proof audit logging for educational purposes.
 
-SIALS captures system and user events, securing them with SHA-256 hashing, ECDSA digital signatures, and AES encryption. Logs are chained to prevent tampering, verified for integrity, and stored securely, providing reliable, tamper-proof audit logging for **educational purposes**.
+Features
 
----
+Digital Signatures (ECDSA) for tamper-proof logs
 
-## Features
+Hash Chaining using SHA-256 for integrity
 
-- **Digital Signatures**: Each log entry is signed using ECDSA to prevent tampering.  
-- **Hash Chaining**: Logs are linked using SHA-256 to detect unauthorized modifications.  
-- **AES Encryption**: Logs are encrypted using AES-256 for secure storage.  
-- **Secure Key Management**: Private keys stored in password-protected keystore.  
-- **Log Verification**: Decrypt and verify log integrity and signatures.  
-- **Tamper Detection & Alerts**: Detect and alert on unauthorized log modifications.  
-- **Reporting**: Optionally save logs and verification results in CSV or JSON format.  
-- **CLI Interface**: Easy command-line interface for capturing and verifying logs.  
+AES Encryption for secure log storage
 
----
+Secure key management with password-protected keystore
 
-## Technologies Used
+Log verification and tamper detection
 
-- **Python 3.x**  
-- **Flask** (optional web interface)  
-- **SQLite** (lightweight database for storing logs)  
-- **cryptography** library for encryption and digital signatures  
-- **hashlib** for hashing logs  
-- **pytest** for unit testing  
+Optional reporting in CSV/JSON format
 
----
+CLI interface for capturing and verifying logs
 
-## Installation
+Technologies Used
 
-1. Clone the repository:  
-```bash
+Python 3.x
+
+Flask (optional web interface)
+
+SQLite (database for storing logs)
+
+cryptography library for encryption and digital signatures
+
+hashlib for hashing logs
+
+pytest for unit testing
+
+Installation
+1. Clone the Repository
 git clone https://github.com/your-username/sials.git
 cd sials
+2. Install Required Packages
+pip install -r requirements.txt
+3. Run the Tool
+python sials.py
+Usage
+
+Start the tool and input system or user event data.
+
+Logs are hashed, digitally signed, and encrypted automatically.
+
+Encrypted logs are securely stored in SQLite.
+
+For verification: decrypt logs, verify digital signatures, and check hash chain integrity.
+
+Optionally, generate and save a report in CSV or JSON format.
+
+Use Cases
+
+Secure logging of system and user events for educational demonstrations
+
+Prevent tampering while teaching cryptographic integrity and authentication concepts
+
+Demonstrate audit logging processes and verification techniques
+
+Testing
+
+Unit tests implemented using pytest.
+
+Test cases include:
+
+Log creation
+
+Signature verification
+
+Hash chain validation
+
+Tamper detection
+
+Run tests using:
+
+pytest
+License
+
+This project is created solely for educational purposes. It demonstrates secure audit logging, digital signatures, hash chaining, and encryption techniques. It is not intended for commercial use or production deployment.
+
+Author
+
+Namita Shrestha
